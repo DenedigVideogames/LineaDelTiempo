@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff499afd6cd9de742aa568928459b35c, type: 3}
+  m_Name: Ficha18
+  m_EditorClassIdentifier: 
+  level: 0
+  year: 2005
+  title:
+  - Juan Manuel Lozano Gallegos
+  - Juan Manuel Lozano Gallegos
+  - Juan Manuel Lozano Gallegos
+  invention:
+  - Jetpack mexicano
+  - idioma 02
+  - idioma 03
+  description:
+  - "Es un artefacto que funciona a partir de tanques llenos con Per\xF3xido de Hid\xF3geno,
+    que al hacer combusti\xF3n generan una propulsi\xF3n a chorro que eleva a la
+    persona por los aires"
+  - idioma 02
+  - idioma 03
+  image: {fileID: 21300000, guid: 4e3f5a12420b91a4da44378bc92b86db, type: 3}

@@ -1,0 +1,33 @@
+0,Nombre De Usuario,¿kenin motoka?,K'aap k'aaba' may
+1,Confirmar,tlachikaua,"Remolacha, meent"
+2,El nombre de usario debe tener más de 5 carácteres,yeuatl tokaitl ik tlakatl kipia ma nikpia achi ik makuili tlajkuilolpamitl,Leti' k'aaba' may p'aax yaan Máas jo'o hu'un carácteres 
+3,Bienvenido a está experiencia virtual dónde el principal objetivo es que aprendas mientras te diviertes.,ximopanolti a inin asomaluauetl ipan  semtlaltikpamatlatl kan se iuki ka machtia noka ueliti mauiltia,Máanen a yaan yaan virtual tu'ux leti' táanil objetivo ka kaanbal k’iin kaanbal te náays óol.
+4,Por favor usa el teclado para escribir el nombre con el que quieras aparecer durante el juego.,nimitstlatlautia  ti-tlamanilia in machiotlakuiloni nik ijkuiloa in tokaitl a tlamanilia ipan yeuatl videopatoli,Bet uts ch'a' leti' teclado tia'al ts'íib leti' k'aaba' may tia'al jóok’ol ichil leti' báaxal
+5,Presiona el botón jugar para empezar.,tlamatoka in miuki mauiltia nik peua,Ts’aal leti' úuturis báaxal tia'al chúunbes
+6,El objetivo del juego es colocar las fichas en el orden cronológico correspondiente.,in iuki ik videopatoli tlatlalia in olpatoli ipan in tlasempoualistli teipa ejketl kampa ,Leti' objetivo del báaxal es ts’aa k'iinil leti' tsool cronológico e'es
+7,Presiona y sostén el botón izquierdo del mouse sobre las fichas para arrastrarlas sobre la casilla que consideres correcta.,tlamatoka tlatsitskia in miuki opochtli ik kimichin ipan in olpatoli nik tlauilana sesen se ik aneuantin ipan in nautlateuili ma xiquilnamiqui ka melauak,Ts’aal y láat’ leti' úuturis tsíik ch'o' óok’ol k'iinil tia'al jiil óok’ol la casilla ka oks óol
+8,Presiona con el botón derecho del mouse sobre una ficha para obtener más información sobre ella.,tlamatoka tlatsitskia in miuki melauak opochtli ik kimichin ipan se olpatoli nik nikpia achi tlanonotsalistli ipan yeuatl,Ts’aal úuturis no'oj del ch'o' óok'ol k'iinil tia'al antal máas t'aan óok’ol leti' le
+9,Si quieres cambiar una ficha de lugar puedes hacerlo arrastrando la ficha hacía otra casilla.,kemaj moneki tlakuepa se olpatoli ik kan uelitiyotl tlachiua akauatanijti in olpatoli kopa okse kan ,Wáa yaayan jeel jun k'iinil lúuch páajtal máak'an kóol k'iinil ich otra casilla
+10,En la parte superior de la pantalla habrá un contador el cuál medirá el tiempo total que tardas en resolver el juego esté solo se detendrá al final del juego.,ipan in tlajkotonyotl ik ako ik in tlapaloni nikpia se pouki in tlein tlatlamachiua in kauitl tlamilistli ik neuejkaualistli ipan tlami in videopatoli inin san tetsikoa satepan ik videopatoli,Ich leti' nu’ukul ka’anal ich pantalla antal jun xook leti' máakalmáak p'iis leti' k'iin túulis ka xáantal ich resolver leti' báaxal lak'in chéen wa'akuns ich báaxal
+11,Una vez estén todas las fichas en su lugar presiona el botón de “Revisar” para ver tus aciertos. ,"seppa ipan i-kan in olpatoli,  tlamatoka in miuki ik tlacemmachiyotiliztli nik tlachia mo-tlaipantilistli","Jun téen antal tuláakal k'iinil lti' kúuch ts'aal leti' úuturis ""il wáa ma'alob""  tia'al il teech ma'alob"
+12,Mientras más rápido coloques las fichas y más aciertos tengas mayor será tu puntaje.,noka achi isiukak tlatlalia in olpatoli yi achi tlaipantilistli nikpia achkautli teuatl tlapoalmachiotl,Túun máas séeb ts’aa k'iinil y máas ma'alob yaan nojochil antal teech puntaje
+13,Una vez estén todas las fichas en su lugar presiona el botón de “Revisar” para ver tus aciertos. ,seppa ipan i-kan in olpatoli  tlamatoka in miuki ik tlacemmachiyotiliztli nik tlachia mo-tlaipantilistli,"Jun téen antal tuláakal las k'iinil ich su kúuch ts’aal úuturis de ""il wáa ma'alob"" tia'al il teech ma'alob"
+14,Obtén el mayor puntaje posible para superar a otros jugadores.,teasi yeuatl achkautli tlapoalmachiotl nik sempanauia a inilui mauiltinimej,chuuk nohochil ma'alob unaj tia’al náajal a otros báaxal
+15,Si quieres regresar al menú principal o cambiar algún ajuste de audio puedes hacerlo presionando el botón “Pausa”.,"kemaj tlaneki tlakuepa kanapa peuali o tlakuepa seki tlasenkaualistli ik tsatsilistli ueliti ayi kanapa tlamatoka in miuki ""cacahua""","Wáa k’áat al túuch'ub o suut heel hayp’éel p’elechkun de kóochil páajtal máak'an ts’aal leti' úuturis ""Wa'atal"""
+16,Fin Del Juego,tlamilistli ik videopatoli,Xuul k'aab
+17,Menú,peuali,Túuch'ub
+18,Aciertos:,tlaipantilistli:,Ma'alob:
+19,Puntuación:,ilnamikamatl:,Muuch’:
+20,Revisar,tlacemmachiyotiliztli,Ma'alob
+21,Jugar,mauiltia,Báaxal
+22,Créditos,tlajtolkakilia,P’aax
+23,Reglas,nauatili,Ka'ambes
+24,Siguiente,satepan,Chuuk
+25,Pausa,"cacahua, mo",Je'elel
+26,Opciones,teixkisalistli,teet
+27,Volumen,soneui,Kóochil
+28,Salir al menú,kisa kanapa peuali ,Jóok’ol le túuh'ub
+29,Regresar,tlakuepa,Suut
+30,Menú,peuali ,Túuch'ub
+31,Volver a jugar,tlakuepa a mauiltia,Chúunbes túumben
+32,Ese nombre de usuario ya existe,inon tokaitl ik tlakatl yej inin ipan tlamanilistli,k'aaba' may kuxtal

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff499afd6cd9de742aa568928459b35c, type: 3}
+  m_Name: Ficha28
+  m_EditorClassIdentifier: 
+  level: 0
+  year: 1918
+  title:
+  - "Juan Guillermo Villasana L\xF3pez"
+  - "Juan Guillermo Villasana L\xF3pez"
+  - "Juan Guillermo Villasana L\xF3pez"
+  invention:
+  - "H\xE9lice An\xE1huac"
+  - idioma 02
+  - idioma 03
+  description:
+  - "Es una h\xE9lice con varios tipos de maderas y un ensamble nuevo, que permite
+    a los aparatos elevarse m\xE1s y mejor, dando un giro total a la aeron\xE1utica
+    mundial"
+  - idioma 02
+  - idioma 03
+  image: {fileID: 21300000, guid: 1832b82d16af4e5448d0b9e41a093993, type: 3}

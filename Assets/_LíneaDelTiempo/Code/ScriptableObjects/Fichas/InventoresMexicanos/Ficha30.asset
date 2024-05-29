@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff499afd6cd9de742aa568928459b35c, type: 3}
+  m_Name: Ficha30
+  m_EditorClassIdentifier: 
+  level: 0
+  year: 1990
+  title:
+  - "Jos\xE9 Mar\xEDa Riob\xF3o"
+  - "Jos\xE9 Mar\xEDa Riob\xF3o"
+  - "Jos\xE9 Mar\xEDa Riob\xF3o"
+  invention:
+  - Reforzamiento de estructuras con contraventeo
+  - idioma 02
+  - idioma 03
+  description:
+  - "Sistema y m\xE9todo para rigidizar y reforzar, a base de contraventeo, estructuras
+    nuevas o existentes empleando cables o torones de acero de preesfuerzo"
+  - idioma 02
+  - 
+  image: {fileID: 21300000, guid: 0f2448dafd8747c47b77c8de162aa6ae, type: 3}

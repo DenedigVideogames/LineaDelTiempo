@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff499afd6cd9de742aa568928459b35c, type: 3}
+  m_Name: Ficha14
+  m_EditorClassIdentifier: 
+  level: 0
+  year: 1926
+  title:
+  - "Juli\xE1n Carrillo"
+  - "Juli\xE1n Carrillo"
+  - "Juli\xE1n Carrillo"
+  invention:
+  - Sonido 13
+  - idioma 02
+  - idioma 03
+  description:
+  - "Es una creaci\xF3n mexicana  la cual quiso romper con la teor\xEDa musical.
+    Su objetivo: experimentar nuevos sonidos y transcender la escala musical de 12
+    notas"
+  - idioma 02
+  - idioma 03
+  image: {fileID: 21300000, guid: d154fcedff6bd044db7df16b130ceabc, type: 3}

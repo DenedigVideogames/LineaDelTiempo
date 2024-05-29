@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff499afd6cd9de742aa568928459b35c, type: 3}
+  m_Name: Ficha27
+  m_EditorClassIdentifier: 
+  level: 0
+  year: 1855
+  title:
+  - "Jos\xE9 Esteban Sol\xEDs"
+  - "Jos\xE9 Esteban Sol\xEDs"
+  - "Jos\xE9 Esteban Sol\xEDs"
+  invention:
+  - "Desfibradora de henequ\xE9n"
+  - idioma 02
+  - idioma 03
+  description:
+  - "Es una m\xE1quina para desfibrar las pencas de henequ\xE9n que facilit\xF3 la
+    industrializaci\xF3n del agave en Yucat\xE1n"
+  - idioma 02
+  - idioma 03
+  image: {fileID: 21300000, guid: 663da3b43593de54699196072885c32f, type: 3}

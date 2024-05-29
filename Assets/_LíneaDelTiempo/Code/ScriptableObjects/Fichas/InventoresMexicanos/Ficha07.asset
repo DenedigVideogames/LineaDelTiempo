@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff499afd6cd9de742aa568928459b35c, type: 3}
+  m_Name: Ficha07
+  m_EditorClassIdentifier: 
+  level: 0
+  year: 2003
+  title:
+  - "Manuel R. Guti\xE9rrez Novelo "
+  - "Manuel R. Guti\xE9rrez Novelo "
+  - "Manuel R. Guti\xE9rrez Novelo "
+  invention:
+  - "Televisi\xF3n 3D"
+  - Idioma 02
+  - Idioma 03
+  description:
+  - "Dise\xF1\xF3 un dispositivo llamado TD Vision. "
+  - idioma 02
+  - idioma 03
+  image: {fileID: 21300000, guid: 483f8c764c7baa548a1e32305ea80730, type: 3}

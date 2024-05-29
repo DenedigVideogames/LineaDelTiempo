@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff499afd6cd9de742aa568928459b35c, type: 3}
+  m_Name: Ficha26
+  m_EditorClassIdentifier: 
+  level: 0
+  year: 1957
+  title:
+  - "Juan Celada Salm\xF3n"
+  - "Juan Celada Salm\xF3n"
+  - "Juan Celada Salm\xF3n"
+  invention:
+  - Proceso YHL
+  - idioma 02
+  - idioma 03
+  description:
+  - "El Proceso HyL es un sistema de reducci\xF3n directa del hierro, del cual se
+    obtiene como producto final fierro esponja o hierro esponja"
+  - idioma 02
+  - idioma 03
+  image: {fileID: 21300000, guid: 1d9b2679bde10f0409d9f67615a8ec97, type: 3}

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff499afd6cd9de742aa568928459b35c, type: 3}
+  m_Name: Ficha02
+  m_EditorClassIdentifier: 
+  level: 0
+  year: 1951
+  title:
+  - 'Luis Ernesto Miramontes  '
+  - 'Luis Ernesto Miramontes  '
+  - 'Luis Ernesto Miramontes  '
+  invention:
+  - 'Pastilla Anticonceptiva  '
+  - Idioma 02
+  - Idioma 03
+  description:
+  - Es un medicamento que contiene diversas hormonas, y se utiliza como anticonceptivo,
+    para evitar el embarazo
+  - idioma 02
+  - idioma 03
+  image: {fileID: 21300000, guid: d22c88377f3251741a4e226e4a636c65, type: 3}

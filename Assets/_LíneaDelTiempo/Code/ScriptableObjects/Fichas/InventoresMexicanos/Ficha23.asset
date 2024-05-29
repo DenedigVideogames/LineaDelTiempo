@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff499afd6cd9de742aa568928459b35c, type: 3}
+  m_Name: Ficha23
+  m_EditorClassIdentifier: 
+  level: 0
+  year: 2005
+  title:
+  - "Joel Sosa y Segio Galv\xE1n"
+  - "Joel Sosa y Segio Galv\xE1n"
+  - "Joel Sosa y Segio Galv\xE1n"
+  invention:
+  - "Concreto trasl\xFAcido"
+  - idioma 02
+  - idioma 03
+  description:
+  - "Inventaron un tipo nuevo de concreto que permite pasar la luz, y que adem\xE1s
+    es mucho m\xE1s liviano que el concreto convencional"
+  - idioma 02
+  - idioma 03
+  image: {fileID: 21300000, guid: e83b2d62a07936d43823493cbdaad31d, type: 3}
