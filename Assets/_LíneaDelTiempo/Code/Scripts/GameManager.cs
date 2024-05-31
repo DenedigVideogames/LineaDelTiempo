@@ -19,13 +19,13 @@ public class GameManager : MonoBehaviour
     [SerializeField] private List<FichaData> Level02 = new List<FichaData>();
     [SerializeField] private List<FichaData> Level03 = new List<FichaData>();
 
-    private List<List<FichaData>> LevelsContainer= new List<List<FichaData>>();
+    private List<List<FichaData>> LevelsContainer = new List<List<FichaData>>();
 
     public List<FichaData> ActualFichas = new List<FichaData>();
 
-    public DropSlot[] slots;
+    public DropSlot[] slots; 
 
-    
+
     [SerializeField] private TextMeshProUGUI aciertosLabel;
 
     public int Score = 0;
@@ -49,7 +49,13 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject gameOverPanel;
     [SerializeField] private GameObject checkButton;
     private int FinalScore;
-  
+
+    public GameObject objectPrefab;
+
+    public Transform[] spawnPoints;
+
+    public bool canSpawnFichas;
+
 
     void Start()
     {
@@ -69,9 +75,16 @@ public class GameManager : MonoBehaviour
         var actualLevel = LevelsContainer[_LevelIndex];
         var fichas = ShuffleList(actualLevel).Take(fichasCount).ToList();
 
-        for (int i = 0; i <= fichasCount - 1; i++)
+        int spawnCount = Math.Min(fichasCount, spawnPoints.Length);
+
+        for (int i = 0; i < spawnCount; i++)
         {
-            var actualObject = Instantiate(fichaPrefab, transform).GetComponent<Ficha>();
+            if (canSpawnFichas)
+            {
+                Instantiate(objectPrefab, spawnPoints[i].position, Quaternion.identity);
+            }
+
+            var actualObject = Instantiate(fichaPrefab, spawnPoints[i].position, Quaternion.identity).GetComponent<Ficha>();
             actualObject._FichaData = fichas[i];
             ActualFichas.Add(actualObject._FichaData);
         }
@@ -99,8 +112,8 @@ public class GameManager : MonoBehaviour
         var sortedList = ActualFichas.OrderByDescending(x => x.Year).ToList();
 
         ActualFichas.Clear();
-        
-        for(int i = 0 ; i  <= sortedList.Count-1; i++)
+
+        for (int i = 0; i <= sortedList.Count - 1; i++)
         {
             ActualFichas.Add(sortedList[i]);
         }
@@ -112,17 +125,17 @@ public class GameManager : MonoBehaviour
         for (int i = 0; i <= slots.Length - 1; i++)
         {
             slots[i].year = ActualFichas[i].Year;
-        } 
+        }
     }
-  
+
     public void Check()
     {
         StartCoroutine("CheckCoroutine");
     }
 
-    IEnumerator  CheckCoroutine()
+    IEnumerator CheckCoroutine()
     {
-        
+
         time._timmerIsRunning = false;
         Score = 0;
         for (int i = 0; i <= slots.Length - 1; i++)
@@ -144,7 +157,7 @@ public class GameManager : MonoBehaviour
         }
 
         float finalScore = Score * Globals.Score;
-        aciertosLabel.text =Score + "/5";
+        aciertosLabel.text = Score + "/5";
 
         scoreLabel.text = Math.Round(finalScore).ToString();
         FinalScore = ((int)finalScore);
@@ -159,17 +172,17 @@ public class GameManager : MonoBehaviour
     {
         LeaderboardCreator.GetLeaderboard(publicKey, ((msg) =>
         {
-            for(int i = 0; i < userNames.Count; ++i)
+            for (int i = 0; i < userNames.Count; ++i)
             {
-                userNames[i].text = (msg[i].Rank +".-"+ msg[i].Username);
-                scores[i].text = msg[i].Score.ToString();             
+                userNames[i].text = (msg[i].Rank + ".-" + msg[i].Username);
+                scores[i].text = msg[i].Score.ToString();
             }
         }));
     }
 
     public void GetPlayerPosition()
     {
-        LeaderboardCreator.GetLeaderboard(publicKey, ((msg) => 
+        LeaderboardCreator.GetLeaderboard(publicKey, ((msg) =>
         {
             foreach (var item in msg)
             {
@@ -187,18 +200,18 @@ public class GameManager : MonoBehaviour
 
     public void SetLeaderBoardEntry(string username, int score)
     {
-            LeaderboardCreator.UploadNewEntry(publicKey, username, score, (msg) =>
-            {
-                LeaderboardCreator.ResetPlayer();
-                checkButton.GetComponent<Button>().enabled = false;
-                wariningField2.gameObject.SetActive(false);
-                GetLeaderBoard();
-                GetPlayerPosition();
-            }, (msg)=>
-            {
-                checkButton.GetComponent<Button>().enabled = true;
-                wariningField2.gameObject.SetActive(true);
-            });
+        LeaderboardCreator.UploadNewEntry(publicKey, username, score, (msg) =>
+        {
+            LeaderboardCreator.ResetPlayer();
+            checkButton.GetComponent<Button>().enabled = false;
+            wariningField2.gameObject.SetActive(false);
+            GetLeaderBoard();
+            GetPlayerPosition();
+        }, (msg) =>
+        {
+            checkButton.GetComponent<Button>().enabled = true;
+            wariningField2.gameObject.SetActive(true);
+        });
     }
 
     public void SetUserName()
