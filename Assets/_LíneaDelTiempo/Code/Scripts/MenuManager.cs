@@ -56,6 +56,11 @@ public class MenuManager : MonoBehaviour
         }
     }
 
+    public void Test()
+    {
+        SceneManager.LoadScene("TESTNEW");
+    }
+
     public void SetLanguage(int language)
     {
         PlayerPrefs.SetInt("Idioma", language);

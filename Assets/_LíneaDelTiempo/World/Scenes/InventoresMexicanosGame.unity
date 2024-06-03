@@ -901,7 +901,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 237411628}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
   m_Name: 
@@ -981,7 +981,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _LevelIndex: 0
-  showCards: 0
   fichasCount: 5
   fichaPrefab: {fileID: 1079817301007331852, guid: 4bc5d4cb77e0a044aabe9b2c6500817e, type: 3}
   Level01:
@@ -1048,6 +1047,7 @@ MonoBehaviour:
   wariningField2: {fileID: 1749758522}
   gameOverPanel: {fileID: 2145726242}
   checkButton: {fileID: 1635492151}
+  showFichasAtSlots: 1
 --- !u!114 &237411636
 MonoBehaviour:
   m_ObjectHideFlags: 0
