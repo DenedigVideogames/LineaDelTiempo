@@ -41,13 +41,18 @@ public class GameManager : MonoBehaviour
 
     // Add the public boolean
     public bool showFichasAtSlots = false;
+    public bool spawnCorrectAndIncorrectFichas = false;
 
     void Start()
     {
         Debug.Log(PlayerPrefs.GetString("UserName"));
         GetLevels();
 
-        if (showFichasAtSlots) //check bool
+        if (spawnCorrectAndIncorrectFichas)
+        {
+            SpawnCorrectAndIncorrectFichas();
+        }
+        else if (showFichasAtSlots)
         {
             SpawnFichasInSlots();
             showFichasAtSlots = false;
@@ -228,4 +233,76 @@ public class GameManager : MonoBehaviour
 
         SortFichas();
     }
+
+    void SpawnCorrectAndIncorrectFichas()
+    {
+        var actualLevel = LevelsContainer[_LevelIndex];
+        var fichas = ShuffleList(actualLevel).Take(fichasCount).ToList();
+
+        // Crear una lista para fichas correctas y otra para incorrectas
+        var correctFichas = fichas.Take(3).ToList();
+        var incorrectFichas = fichas.Skip(3).Take(2).ToList();
+
+        // Barajar las posiciones de los slots para asignar fichas incorrectas
+        var slotIndices = Enumerable.Range(0, slots.Length).ToList();
+        ShuffleList2(slotIndices);
+
+        // Asignar fichas correctas a los primeros 3 slots
+        for (int i = 0; i < correctFichas.Count; i++)
+        {
+            var ficha = Instantiate(fichaPrefab, transform).GetComponent<Ficha>();
+            ficha._FichaData = correctFichas[i];
+
+            // Asignar el año correcto al slot
+            slots[slotIndices[i]].year = ficha._FichaData.Year;
+
+            // Inicializar la ficha en el slot correspondiente
+            slots[slotIndices[i]].InitializeFicha(ficha.gameObject);
+        }
+
+        // Asignar fichas incorrectas a los slots restantes
+        for (int i = 0; i < incorrectFichas.Count; i++)
+        {
+            var ficha = Instantiate(fichaPrefab, transform).GetComponent<Ficha>();
+            ficha._FichaData = incorrectFichas[i];
+
+            // Asignar un año incorrecto al slot
+            int slotIndex = slotIndices[correctFichas.Count + i];
+            slots[slotIndex].year = ficha._FichaData.Year;
+
+            // Inicializar la ficha en el slot correspondiente
+            slots[slotIndex].InitializeFicha(ficha.gameObject);
+        }
+
+        // Intercambiar las fichas entre los dos slots restantes
+        var tempFicha = slots[slotIndices[3]].item;
+        var tempYear = slots[slotIndices[3]].year;
+
+        slots[slotIndices[3]].item = slots[slotIndices[4]].item;
+        slots[slotIndices[3]].year = slots[slotIndices[4]].year;
+
+        slots[slotIndices[4]].item = tempFicha;
+        slots[slotIndices[4]].year = tempYear;
+
+        SortFichas();
+    }
+
+
+    // Helper method to shuffle a list
+    private List<T> ShuffleList2<T>(List<T> inputList)
+    {
+        System.Random rng = new System.Random();
+        int n = inputList.Count;
+        while (n > 1)
+        {
+            n--;
+            int k = rng.Next(n + 1);
+            T value = inputList[k];
+            inputList[k] = inputList[n];
+            inputList[n] = value;
+        }
+        return inputList;
+    }
+
+    //vamos bien, funciona, pero los slots no reconocen que la ficha correcta esta puesta correctamente 
 }

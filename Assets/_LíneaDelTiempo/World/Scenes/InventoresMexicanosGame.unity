@@ -901,7 +901,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 237411628}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
   m_Name: 
@@ -1047,7 +1047,7 @@ MonoBehaviour:
   wariningField2: {fileID: 1749758522}
   gameOverPanel: {fileID: 2145726242}
   checkButton: {fileID: 1635492151}
-  showFichasAtSlots: 1
+  showFichasAtSlots: 0
 --- !u!114 &237411636
 MonoBehaviour:
   m_ObjectHideFlags: 0

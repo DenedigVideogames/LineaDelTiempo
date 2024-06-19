@@ -55,4 +55,15 @@ public class DropSlot : MonoBehaviour, IDropHandler
             item.transform.SetParent(DragHandler.objBeingDraged.transform);
         }
     }
+
+    public void InitializeFicha(GameObject ficha)
+    {
+        item = ficha;
+        item.transform.SetParent(transform);
+        item.transform.localPosition = Vector3.zero; // Ajustar posición local para centrar en el slot
+        if (yearLabel != null)
+        {
+            yearLabel.text = year.ToString();
+        }
+    }
 }

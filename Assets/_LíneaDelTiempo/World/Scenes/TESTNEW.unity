@@ -1053,6 +1053,7 @@ MonoBehaviour:
   gameOverPanel: {fileID: 2145726242}
   checkButton: {fileID: 1635492151}
   showFichasAtSlots: 1
+  spawnCorrectAndIncorrectFichas: 1
 --- !u!114 &237411636
 MonoBehaviour:
   m_ObjectHideFlags: 0
