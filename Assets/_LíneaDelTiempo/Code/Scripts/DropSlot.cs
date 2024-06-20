@@ -25,31 +25,38 @@ public class DropSlot : MonoBehaviour, IDropHandler
     {
         Debug.Log("Entro");
 
-        if (!item) ////////////////////////////////////////      AQUI SE CHECA LA VERIFICACION DE LAS CARTAS
+        if (!item)
         {
             item = DragHandler.objBeingDraged;
             item.transform.SetParent(transform);
-            if ( item.GetComponent<Ficha>().year == year){
-                Correct = true;
-            }
-            else {
-                Correct = false;
-            }
             item.transform.position = transform.position;
         }
-        
+        // Llamar a la verificación al soltar
+        CheckCorrect();
+    }
+
+    private void CheckCorrect()
+    {
+        if (item != null && item.GetComponent<Ficha>().year == year)
+        {
+            Correct = true;
+        }
+        else
+        {
+            Correct = false;
+        }
     }
 
     private void Update()
     {
-        // Si hay un objeto y no está en la ranura actual
+        // Llamar a la verificación en cada frame
+        CheckCorrect();
+
+        // Restante lógica de Update...
         if (item != null && item.transform.parent != transform)
         {
             Debug.Log("Remover");
-
-            // Elimina el objeto de la ranura
             item = null;
-            // Establece el objeto como hijo del objeto que está siendo arrastrado
             item = DragHandler.objBeingDraged;
             if (item == null) return;
             item.transform.SetParent(DragHandler.objBeingDraged.transform);
