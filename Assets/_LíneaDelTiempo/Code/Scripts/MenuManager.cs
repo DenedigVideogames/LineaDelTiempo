@@ -22,6 +22,8 @@ public class MenuManager : MonoBehaviour
 
     [SerializeField] private List<TextMeshProUGUI> userNames;
     [SerializeField] private List<TextMeshProUGUI> scores;
+
+    public GameObject SeleccionCanvas;
     private void Start()
     {
         GetLeaderBoard();
@@ -47,6 +49,7 @@ public class MenuManager : MonoBehaviour
             AudioManager.Instance.PlaySound2D("01");
             Globals.firstPlay = false;
             menuPanel.SetActive(false);
+            SeleccionCanvas.SetActive(false);
             omitirButton.SetActive(true);
         }
         else

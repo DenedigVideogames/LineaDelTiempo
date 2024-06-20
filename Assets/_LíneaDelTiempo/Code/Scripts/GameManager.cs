@@ -288,7 +288,6 @@ public class GameManager : MonoBehaviour
     }
 
 
-    // Helper method to shuffle a list
     private List<T> ShuffleList2<T>(List<T> inputList)
     {
         System.Random rng = new System.Random();

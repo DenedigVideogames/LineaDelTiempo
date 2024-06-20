@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: "Assets/_L\xEDneaDelTiempo/World/Scenes/InventoresMexicanosGame.unity"
     guid: bd24bc724b66dd545bb51e4c3e8510cf
   - enabled: 1
-    path: "Assets/_L\xEDneaDelTiempo/World/Scenes/TESTNEW.unity"
+    path: "Assets/_L\xEDneaDelTiempo/World/Scenes/GamePlus.unity"
     guid: 942512ebf5235b44ea6c71efeeeb504b
+  - enabled: 1
+    path: "Assets/_L\xEDneaDelTiempo/World/Scenes/Seleccion.unity"
+    guid: ec32f004b61e60f4ca8dd9424b1bf0f9
   m_configObjects: {}

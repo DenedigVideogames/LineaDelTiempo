@@ -31,7 +31,6 @@ public class DropSlot : MonoBehaviour, IDropHandler
             item.transform.SetParent(transform);
             item.transform.position = transform.position;
         }
-        // Llamar a la verificación al soltar
         CheckCorrect();
     }
 
@@ -49,10 +48,8 @@ public class DropSlot : MonoBehaviour, IDropHandler
 
     private void Update()
     {
-        // Llamar a la verificación en cada frame
         CheckCorrect();
 
-        // Restante lógica de Update...
         if (item != null && item.transform.parent != transform)
         {
             Debug.Log("Remover");
