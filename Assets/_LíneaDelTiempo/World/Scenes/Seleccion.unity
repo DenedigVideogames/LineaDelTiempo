@@ -68716,6 +68716,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skull (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5415177655731151014, guid: b6b12498583c2934e92c019e58fef073, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6b12498583c2934e92c019e58fef073, type: 3}
 --- !u!224 &1665509576 stripped
